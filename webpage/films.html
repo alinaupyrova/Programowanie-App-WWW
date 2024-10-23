@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmy Oskarowe</title>
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!-- Updated to latest jQuery -->
 </head>
 <body>
 
@@ -97,11 +99,31 @@
                 </tr>
             </table>
         </div>
+
+        <!-- New animation div -->
+        <div id="animacjaJestowa3" class="test-block" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; text-align: center;">
+            Klikaj, abym urósł
+        </div>
     </main>
 
     <footer class="footer">
         <p>Wszelkie prawa zastrzeżone © 2024</p>
     </footer>
+
+    <script>
+        // Animation script
+        $("#animacjaJestowa3").on("click", function() {
+            if (!$(this).is(":animated")) {
+                $(this).animate({
+                    width: "+=50",
+                    height: "+=10",
+                    opacity: 0.1,
+                }, {
+                    duration: 3000 // Duration of the animation
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>

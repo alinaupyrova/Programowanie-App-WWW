@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nowości w Kinematografii</title>
-    <link rel="stylesheet" href="menu.css"> <!-- Используйте ваш основной CSS файл -->
+    <link rel="stylesheet" href="menu.css"> 
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -17,7 +19,6 @@
             <li><a href="news.html">Nowości</a></li>
             <li><a href="criticism.html">Krytyka</a></li>
             <li><a href="contact.html">Kontakt</a></li>
-            
         </ul>
     </nav>
 
@@ -43,9 +44,32 @@
         <p>Film zdobył nagrody w wielu kategoriach na ostatnim festiwalu filmowym, w tym za najlepszą reżyserię i zdjęcia.</p>
     </div>
 
+
+    <div id="animacjaTestowa2" class="test-block">
+        Najedź курсором, a się powiększę
+    </div>
+
     <div class="footer">
         <p>Wszelkie prawa zastrzeżone © 2024</p>
     </div>
+
+    <script>
+ 
+        $(document).ready(function() {
+            $("#animacjaTestowa2").on({
+                "mouseover" : function() {
+                    $(this).animate({
+                        width: 300
+                    }, 800);
+                },
+                "mouseout" : function() {
+                    $(this).animate({
+                        width: 200
+                    }, 800);
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

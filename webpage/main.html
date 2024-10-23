@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta name="author" content="FilmWeb Team">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover award-winning films and read critiques, recommendations, and history of the Oscars.">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css"> 
     <title>Filmy Oskarowe</title>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery === 'undefined') {
+            document.write('<script src="path/to/local/jquery.min.js"><\/script>');
+        }
+    </script>
 </head>
-<body>
-    <nav>
-        <ul class="menu">
-            <li><a href="main.html">Strona Główna</a></li>
-            <li><a href="about.html">Historia</a></li>
-            <li><a href="recommendation.html">Recomendacje</a></li>
-            <li><a href="films.html">Filmy Oskarowe</a></li>
-            <li><a href="news.html">Nowości</a></li>
-            <li><a href="criticism.html">Krytyka</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
 
-    <div class="wallpaper">
-        <img src="images/oskar.jpg" alt="Oscar Statuetka" class="oscar-image">
-        <p class="oscar-description">Oto statuetka Oscara - najwyższe wyróżnienie w przemyśle filmowym. Przedstawia ona uznanie dla najlepszych filmów, reżyserów i aktorów w danym roku.</p>
-    </div>
-    
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="main.html">Strona Główna</a></li>
+                <li><a href="about.html">Historia</a></li>
+                <li><a href="recommendation.html">Recomendacje</a></li>
+                <li><a href="films.html">Filmy Oskarowe</a></li>
+                <li><a href="news.html">Nowości</a></li>
+                <li><a href="criticism.html">Krytyka</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wallpaper">
+            <img src="images/oskar.jpg" alt="Oscar Statuetka" class="oscar-image">
+            <p class="oscar-description">Oto statuetka Oscara - najwyższe wyróżnienie w przemyśle filmowym. Przedstawia ona uznanie dla najlepszych filmów, reżyserów i aktorów w danym roku.</p>
+        </div>
+
+        <div id="animacjaTestowa1" class="test-block">Kliknij, a się powiększę</div>
+    </main>
 
     <footer class="footer">
         <p>Wszelkie prawa zastrzeżone © 2024</p>
     </footer>
 
+    <script>
+        $("#animacjaTestowa1").on("click", function() {
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontSize: "3em",
+                borderWidth: "10px"
+            }, 1500);
+        });
+    </script>
 </body>
 </html>
