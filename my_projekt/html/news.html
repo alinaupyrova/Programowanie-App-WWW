@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowości w Kinematografii</title>
+    <link rel="stylesheet" href="css/menu.css"> 
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="about.html">Historia</a></li>
+            <li><a href="recommendation.html">Recomendacje</a></li>
+            <li><a href="films.html">Filmy Oskarowe</a></li>
+            <li><a href="news.html">Nowości</a></li>
+            <li><a href="criticism.html">Krytyka</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h2>Nowości</h2>
+    </header>
+
+    <div class="news-article">
+        <img src="img/foto5.jpg" alt="Nowość w kinematografii">
+        <h2>Nowy film zdobywa Oskara!</h2>
+        <p>Najbardziej oczekiwany film roku zdobył Oskara za najlepszy film. Krytycy chwalą go za wyjątkową narrację i znakomite występy aktorskie.</p>
+    </div>
+
+    <div class="news-article">
+        <img src="img/foto6.jpg" alt="Premiera nowego filmu">
+        <h2>Premiera nowego filmu o superherojach</h2>
+        <p>Nowy film o superherojach zdobył serca widzów na całym świecie. Zobaczcie, co mówią krytycy!</p>
+    </div>
+
+    <div class="news-article">
+        <img src="img/foto7.jpg" alt="Film zdobył wiele nagród">
+        <h2>Film zdobył wiele nagród na festiwalu</h2>
+        <p>Film zdobył nagrody w wielu kategoriach na ostatnim festiwalu filmowym, w tym za najlepszą reżyserię i zdjęcia.</p>
+    </div>
+
+
+    <div id="animacjaTestowa2" class="test-block">
+        Najedź курсором, a się powiększę
+    </div>
+
+    <div class="footer">
+        <p>Wszelkie prawa zastrzeżone © 2024</p>
+    </div>
+
+    <script>
+ 
+        $(document).ready(function() {
+            $("#animacjaTestowa2").on({
+                "mouseover" : function() {
+                    $(this).animate({
+                        width: 300
+                    }, 800);
+                },
+                "mouseout" : function() {
+                    $(this).animate({
+                        width: 200
+                    }, 800);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="FilmWeb Team">
+    <meta name="description" content="Filmy Oskarowe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmy Oskarowe</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="about.html">Historia</a></li>
+            <li><a href="recommendation.html">Recomendacje</a></li>
+            <li><a href="films.html">Filmy Oskarowe</a></li>
+            <li><a href="news.html">Nowości</a></li>
+            <li><a href="criticism.html">Krytyka</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h2>Filmy Oskarowe</h2>
+    </header>
+
+    <main class="content">
+        <div class="table-container"> 
+            <table>
+                <tr>
+                    <th>Film</th>
+                    <th>Rok</th>
+                    <th>Główni aktorzy</th>
+                    <th>Plakat</th> 
+                </tr>
+                <tr>
+                    <td>"Parasite"</td>
+                    <td>2020</td>
+                    <td>Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong</td>
+                    <td><img src="img/parasite.jpg" alt="Parasite" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"Green Book"</td>
+                    <td>2019</td>
+                    <td>Viggo Mortensen, Mahershala Ali, Linda Cardellini</td>
+                    <td><img src="img/green_book.jpg" alt="Green Book" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"The Shape of Water"</td>
+                    <td>2018</td>
+                    <td>Sally Hawkins, Michael Shannon, Richard Jenkins</td>
+                    <td><img src="img/shape_of_water.jpg" alt="The Shape of Water" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"Moonlight"</td>
+                    <td>2017</td>
+                    <td>Trevante Rhodes, Mahershala Ali, Naomie Harris</td>
+                    <td><img src="img/moonlight.jpg" alt="Moonlight" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"Spotlight"</td>
+                    <td>2016</td>
+                    <td>Mark Ruffalo, Michael Keaton, Rachel McAdams</td>
+                    <td><img src="img/spotlight.jpg" alt="Spotlight" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"Birdman"</td>
+                    <td>2015</td>
+                    <td>Michael Keaton, Edward Norton, Emma Stone</td>
+                    <td><img src="img/birdman.jpg" alt="Birdman" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"12 Years a Slave"</td>
+                    <td>2014</td>
+                    <td>Chiwetel Ejiofor, Michael Fassbender, Lupita Nyong'o</td>
+                    <td><img src="img/12_years_a_slave.jpg" alt="12 Years a Slave" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"Argo"</td>
+                    <td>2013</td>
+                    <td>Ben Affleck, Bryan Cranston, John Goodman</td>
+                    <td><img src="img/argo.jpg" alt="Argo" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"The King's Speech"</td>
+                    <td>2011</td>
+                    <td>Colin Firth, Geoffrey Rush, Helena Bonham Carter</td>
+                    <td><img src="img/kings_speech.jpg" alt="The King's Speech" class="movie-poster"></td>
+                </tr>
+                <tr>
+                    <td>"The Hurt Locker"</td>
+                    <td>2010</td>
+                    <td>Jeremy Renner, Anthony Mackie, Brian Geraghty</td>
+                    <td><img src="img/hurt_locker.jpg" alt="The Hurt Locker" class="movie-poster"></td>
+                </tr>
+            </table>
+        </div>
+
+    
+        <div id="animacjaJestowa3" class="test-block" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; text-align: center;">
+            Klikaj, abym urósł
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Wszelkie prawa zastrzeżone © 2024</p>
+    </footer>
+
+    <script>
+      
+        $("#animacjaJestowa3").on("click", function() {
+            if (!$(this).is(":animated")) {
+                $(this).animate({
+                    width: "+=50",
+                    height: "+=10",
+                    opacity: 0.1,
+                }, {
+                    duration: 3000 
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
