@@ -1,0 +1,42 @@
+<header class="header">
+    <h2>Nowości</h2>
+</header>
+
+<div class="news-article">
+    <img src="img/foto5.jpg" alt="Nowość w kinematografii">
+    <h2>Nowy film zdobywa Oskara!</h2>
+    <p>Najbardziej oczekiwany film roku zdobył Oskara za najlepszy film. Krytycy chwalą go za wyjątkową narrację i znakomite występy aktorskie.</p>
+</div>
+
+<div class="news-article">
+    <img src="img/foto6.jpg" alt="Premiera nowego filmu">
+    <h2>Premiera nowego filmu o superherojach</h2>
+    <p>Nowy film o superherojach zdobył serca widzów na całym świecie. Zobaczcie, co mówią krytycy!</p>
+</div>
+
+<div class="news-article">
+    <img src="img/foto7.jpg" alt="Film zdobył wiele nagród">
+    <h2>Film zdobył wiele nagród na festiwalu</h2>
+    <p>Film zdobył nagrody w wielu kategoriach na ostatnim festiwalu filmowym, w tym za najlepszą reżyserię i zdjęcia.</p>
+</div>
+
+<div id="animacjaTestowa2" class="test-block">
+    Najedź kursorem, a się powiększę
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#animacjaTestowa2").on({
+            "mouseover" : function() {
+                $(this).animate({
+                    width: 300
+                }, 800);
+            },
+            "mouseout" : function() {
+                $(this).animate({
+                    width: 200
+                }, 800);
+            }
+        });
+    });
+</script>
